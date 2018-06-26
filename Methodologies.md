@@ -9,7 +9,7 @@ Agile software development is based on an incremental, iterative approach. Inste
 ## Scrum
 
 Scrum is agile in a specific shaping. It is an agile process framework.
-Daily standup, Scrum master, sprints (2 weeks), product owner, retrospective, sprint planning, grooming
+![Scrum mindmap](images/SCRUM.png)
 
 ## Kanban
 
