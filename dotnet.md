@@ -13,13 +13,16 @@ Do not define a structure unless the type has all of the following characteristi
 In, out uniquement sur des interfaces ou des delegates
 Example : Func<in T,out TResult>. 
 
-### Covariance
+In general, a covariant type parameter can be used as the return type of a delegate, and contravariant type parameters can be used as parameter types. For an interface, covariant type parameters can be used as the return types of the interface's methods, and contravariant type parameters can be used as the parameter types of the interface's methods.
 
-keyword out, example: Print(IEnumerable<Animals> animals){ } sur lequel on peut passer une liste de chats : Print(cats). Comme Cat < Animal et que IEnumerable est défini comme IEnumerable<out T>.
-Covariance > can output > type must be the one defined or its subtype
+### Covariance
+keyword out.
+Exemple: Print(IEnumerable<Base> items); --> you can give a List<Derived>. You will just print Stuff from Base but it will work
+Covariance --> You can provide an implementation of a Derived Generic type to your generic function
 
 ### Contrvariance
-
+keywork in
+Example:  bool Validator.Validate<Derived>(Derived d) --> Function bool Validate(Validator<Derived> validator), you can provide a Validator<Base> but it will only validate members of Base but you can use it
 Contravariance > input > we output this type or its ancestors
 
 ## iqueryable vs ienumerable
