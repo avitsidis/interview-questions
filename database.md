@@ -60,10 +60,9 @@ Executed on ddl, user logon/logoff. This could be useful for setting up a user s
 
 Executed on system events such as DB startup, shutdown, server erros
 
-## unsorted
+## Transactions
 
-### What is a transaction? 
-
+### Definition
 A transaction symbolizes a unit of work performed within a database management system (or similar system) against a database, 
 Atomicity requires that each transaction be "all or nothing"
 The consistency property ensures that any transaction will bring the database from one valid state to another.
@@ -71,6 +70,17 @@ The isolation property ensures that the concurrent execution of transactions res
 The durability property ensures that once a transaction has been committed, it will remain so, even in the event of power loss, crashes, or errors.
 
 source: [wikipedia](https://en.wikipedia.org/wiki/ACID)
+
+### ACID
+
+* Atomicity
+* Consistency
+* Isolation
+* Durability
+
+See transaction definition for more
+
+## unsorted
 
 ## truncate vs delete
 
